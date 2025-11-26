@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#root {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.app-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.app-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.app-header p {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+.post {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-right: 15px;
+}
+
+.post-author {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.post-content {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-like {
+  background: #ff4757;
+  color: white;
+}
+
+.btn-like:hover {
+  background: #ff3838;
+  transform: scale(1.05);
+}
+
+.btn-like.liked {
+  background: #ee5a6f;
+  animation: pulse 0.3s;
+}
+
+.btn-share {
+  background: #5352ed;
+  color: white;
+}
+
+.btn-share:hover {
+  background: #3742fa;
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.instructions {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.instructions h2 {
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+.instructions ol {
+  margin-left: 20px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.instructions code {
+  background: #f1f2f6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #e74c3c;
+  font-family: monospace;
+}
